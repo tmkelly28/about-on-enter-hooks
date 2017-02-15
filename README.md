@@ -14,7 +14,7 @@ That function can expect to receive the following arguments:
 
 ```
 const myOnEnterHook = function (nextRouterState, replace, done) {
-
+  // your slick code here
 }
 ```
 
