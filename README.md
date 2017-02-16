@@ -24,7 +24,7 @@ Let's break each of these down:
 
 ## `nextRouterState` 
 `nextRouterState` is an object that contains the upcoming internal state of the `Router` component.
-It usually contains key-value pairs like 'location', 'params', and 'routes' - the main things that `react-router` handles for you. If you need to access the routeParams of a Route (ex. `/stories/:storyId`), this is the place to access that! (In this example, you would be able to get the storyId by saying `nextRouterState.params.storyId`)
+It usually contains key-value pairs like 'location', 'params', and 'routes' - the main things that `react-router` handles for you. If you need to access the routeParams of a Route (ex. `/stories/:storyId`), this is the place to access that! (In this example, you would be able to get the storyId by saying `nextRouterState.params.storyId`).
 
 ## `replace` 
 `replace` is a function that allows you to dynamically change the url. It is similar to `hashHistory.push`. It can either take a pathname, or an object with more configuration. You might use this in an onEnter hook to dynamically re-direct a user from one Route to another. For example, say you have a `Route` like this:
